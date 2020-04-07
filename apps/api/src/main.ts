@@ -1,5 +1,5 @@
 
-import { CONSTANT } from '../../../libs/a/src/index';
+import { CONSTANT } from '@new-ipa/a';
 
 async function bootstrap() {
 
