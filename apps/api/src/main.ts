@@ -1,16 +1,9 @@
-import * as express from 'express';
-import { Message } from '@new-ipa/api-interfaces';
 
-const app = express();
+import { CONSTANT } from '../../../libs/a/src/index';
 
-const greeting: Message = { message: 'Welcome to api!' };
+async function bootstrap() {
 
-app.get('/api', (req, res) => {
-  res.send(greeting);
-});
+console.log(CONSTANT);
+}
 
-const port = process.env.port || 3333;
-const server = app.listen(port, () => {
-  console.log('Listening at http://localhost:' + port + '/api');
-});
-server.on('error', console.error);
+bootstrap();
